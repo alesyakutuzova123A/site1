@@ -1,0 +1,921 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,
+button,
+input,
+textarea:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+    border: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header__container {
+    background: url(../img/bg__header.svg) no-repeat top center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 15px 0;
+    align-items: center;
+}
+
+nav,
+.nav__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whatsapp {
+    align-items: center;
+    display: flex;
+    border: 1px solid #42A9F4;
+    border-radius: 100px;
+    height: 50px;
+    padding: 0 20px 0 20px;
+    margin-right: 65px;
+}
+
+.whatsapp img {
+    margin-right: 10px;
+}
+
+.whatsapp__text {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #42A9F4;
+}
+
+.phone {
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #444444;
+    margin-bottom: 15px;
+
+}
+
+.connection {
+    text-align: right;
+}
+
+.connection-email {
+    display: flex;
+    align-items: center;
+}
+
+.connection-email img {
+    margin-right: 10px;
+}
+
+.email {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2.2rem;
+    color: #7F7F7F;
+
+
+}
+
+.whatsapp:hover {
+    box-shadow: 5px 5px 10px #AEDDFF;
+}
+
+.phone:hover {
+    color: #42A9F4;
+}
+
+.email:hover {
+    color: #42A9F4;
+}
+
+.main {
+    display: flex;
+}
+
+.main__wrap {
+    margin-top: 105px;
+}
+
+.main__wrap h1 {
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 1.5;
+    color: #444444;
+    width: 480px;
+    margin-bottom: 30px;
+}
+
+.main__wrap h1 span {
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 1.5;
+    color: #42A9F4
+}
+
+.main__wrap p {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    width: 500px;
+    color: #6F6F71;
+    margin-bottom: 60px;
+}
+
+.main__wrap a {
+    background: #F44143;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding-left: 45px;
+
+}
+
+.main__wrap a span {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 20px 0;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.main__wrap a:hover {
+    background: #42A9F4;
+    transition: all 0.5s linear;
+
+}
+
+.advantages {
+    padding: 80px 0 100px 0;
+}
+
+.advantages ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.advantages ul li {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(108, 108, 108, 0.25);
+    border-radius: 10px;
+    width: 370px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.advantages ul li p {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #42A9F4;
+    margin-top: 15px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.advantages ul li p:nth-child(2) {
+    width: 120px;
+}
+
+.advantages ul li p:last-child {
+    width: 240px;
+}
+
+.life {
+    padding: 0 0 100px 0;
+}
+
+.life h2 {
+    font-weight: bold;
+    font-size: 3.6rem;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 40px;
+}
+
+.life__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.life__wrap h3 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #42A9F4;
+    margin-bottom: 20px;
+}
+
+.life__wrap p {
+    width: 570px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    color: #444444;
+}
+
+.life__wrap ul li::marker {
+    color: #42A9F4;
+    font-size: 2rem;
+}
+
+.life__wrap ul li span {
+    font-size: 1.6rem;
+
+}
+
+.life__wrap ul li {
+    margin-bottom: 8px;
+
+}
+
+.life__wrap ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.contacts__container {
+    background: #F9FDFF;
+    padding: 100px 0;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__wrap h2 {
+    font-weight: 800;
+    font-size: 3.6rem;
+    color: #444444;
+    margin-bottom: 40px;
+
+}
+
+.contacts__wrap h2 span {
+    font-weight: 800;
+    font-size: 3.6rem;
+    color: #42A9F4;
+
+}
+
+.contacts__wrap p {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #222149;
+    margin-bottom: 10px;
+}
+
+.contacts__time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.contacts__time img {
+    margin-right: 10px;
+}
+
+.contacts__soc {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contacts__soc p {
+    margin-right: 15px;
+}
+
+.contacts__soc img {
+    margin-right: 10px;
+}
+
+.left {
+    text-align: left;
+}
+
+.contacts__time p {
+    color: #6F6F71;
+}
+
+.request__container {
+    background: url(../img/bg__contacts.svg) no-repeat top center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request__form form {
+    padding: 50px 30px;
+    box-shadow: 5px 5px 10px 5px rgba(108, 108, 108, 0.25);
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.request__form form h3 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444444;
+}
+
+.request__form form h3 span {
+    color: #42A9F4;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.request__form form input {
+    font-weight: 500;
+    font-size: 1.6rem;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 15px 0 15px 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.request__form form button {
+    font-weight: 500;
+    font-size: 1.6rem;
+    background: #F44143;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 15px 0 15px 0px;
+    width: 300px;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.request__form form button:hover {
+    background: #42A9F4;
+}
+
+.footer__container {
+    background: #414141;
+    padding: 35px 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.4rem;
+
+    color: #FFFFFF;
+
+}
+
+.photo {
+    transition: 1s;
+}
+
+.photo:hover {
+    transform: scale(1.2);
+}
+
+.photo1 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+    .container {
+        width: 95%;
+    }
+
+    .whatsapp__text {
+        font-size: 1rem;
+    }
+
+    .whatsapp {
+        margin-right: 15px;
+    }
+
+    .main__wrap {
+        margin-top: 55px;
+        width: 50%;
+    }
+
+    .main__wrap h1 {
+        font-size: 3.8rem;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main__wrap h1 span {
+        font-size: 3.8rem;
+    }
+
+    .main__wrap p {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .main>img:nth-child(2) {
+        width: 50%;
+    }
+
+    .advantages ul li {
+        width: 30%;
+    }
+
+    .advantages ul li p:last-child {
+        width: 100%;
+    }
+
+    .advantages ul li p {
+        font-size: 1.6rem;
+    }
+
+    .advantages {
+        padding: 60px 0 80px 0;
+    }
+
+    .advantages ul li {
+        width: 30%;
+    }
+
+    .advantages ul li p {
+        width: 100%;
+    }
+
+    .advantages ul li p {
+        font-size: 1.6rem;
+    }
+
+    .advantages {
+        padding: 60px 0 80px 0;
+    }
+
+    .life h2 {
+        font-size: 2.6rem;
+    }
+
+    .photo1 {
+        width: 45%;
+    }
+
+    .life__wrap p {
+        width: 100%;
+    }
+
+    .life__wrap-text {
+        width: 50%;
+    }
+
+    .contacts__wrap h2 {
+        font-size: 2.6rem;
+    }
+
+    .contacts__wrap h2 span {
+        font-size: 2.6rem;
+    }
+
+    .life {
+        padding: 0 0 80px 0;
+    }
+
+    .contacts__container {
+        padding: 80px 0;
+    }
+
+    .contacts__wrap p {
+        font-size: 1.8rem;
+    }
+
+    .contacts__wrap {
+        width: 40%;
+    }
+
+    .contacts>iframe:nth-child(2) {
+        width: 60%;
+    }
+
+    .request>img:nth-child(1) {
+        width: 60%;
+    }
+
+    .request__form {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+    .request__form form h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .request__form form h3 span {
+        font-size: 2rem;
+    }
+
+    .request__form form input {
+        font-size: 1.4rem;
+        padding: 10px 0 10px 20px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .request__form form button {
+        font-size: 1.4rem;
+        padding: 10px 0 10px 20px;
+        width: 250px;
+        margin-bottom: 0;
+    }
+
+    .request__form form {
+        padding: 20px 30px;
+    }
+
+    .footer__container {
+        padding: 25px 0;
+    }
+    .photo {
+        width: 100%;
+        }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+
+    .whatsapp {
+        border: none;
+        padding: 0;
+        margin-right: 0;
+        display: flex;
+    }
+
+    .whatsapp__text {
+        display: none;
+    }
+
+    .whatsapp img {
+        width: 60px;
+    }
+
+    .header__container>div:nth-child(1)>header:nth-child(1)>nav:nth-child(1)>a:nth-child(1)>img:nth-child(1) {
+        width: 120px;
+    }
+
+    .main__wrap h1 {
+        font-size: 3.8rem;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .main__wrap h1 span {
+        font-size: 3.8rem;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .main__wrap p {
+        font-size: 2.2rem;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .main__wrap {
+        margin-top: 55px;
+    }
+
+    .main>img:nth-child(2) {
+        width: 100%;
+    }
+
+    .advantages ul li {
+        width: 30%;
+    }
+
+    .advantages ul li img {
+        width: 80px;
+    }
+
+    .advantages ul li {
+        width: 30%;
+    }
+
+    .advantages ul li p {
+        font-size: 1.2rem;
+    }
+
+    .advantages ul li p:last-child {
+        width: 100%;
+    }
+
+    .advantages {
+        padding: 40px 0 60px 0;
+    }
+
+    .life h2 {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+
+    .life__wrap {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .life__wrap p {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .life__wrap ul li span {
+        font-size: 1.4rem;
+    }
+
+    .life__wrap-text {
+        width: 100%;
+    }
+
+    .whatsapp:hover {
+        box-shadow: none;
+    }
+
+    .life {
+        padding: 0 0 60px 0;
+    }
+
+    .life__wrap {
+        margin-bottom: 10px;
+    }
+
+    .life {
+        padding: 0 0 60px 0;
+    }
+
+    .contacts__wrap h2 {
+        font-size: 2.3rem;
+    }
+
+    .contacts__wrap h2 span {
+        font-size: 2.3rem;
+    }
+
+    .contacts__container {
+        padding: 60px 0;
+    }
+
+    .contacts__wrap p {
+        font-size: 1.4rem;
+    }
+
+    .contacts>iframe:nth-child(2) {
+        width: 50%;
+    }
+
+    .contacts__wrap {
+        width: 50%;
+    }
+
+    div.connection:nth-child(3)>span:nth-child(1)>a:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    div.connection:nth-child(3)>div:nth-child(2)>a:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .contacts__time>p:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .request {
+        display: block;
+    }
+
+    .request__container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .request__form form input {
+        width: 90%;
+    }
+
+    .request__form form button {
+        width: 90%;
+    }
+
+    .request>img:nth-child(1) {
+        display: none;
+    }
+
+.photo {
+width: 100%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .container {
+        width: 95%;
+    }
+    nav, .nav__contacts {
+        display: block;
+        text-align: center;
+        }
+        .whatsapp {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+        }
+        .whatsapp__text {
+        font-size: 1.3rem;
+        }
+        .connection {
+        text-align: center;
+        }
+        .connection-email {
+        justify-content: center;
+        }
+        .header__container > div:nth-child(1) > header:nth-child(1) > nav:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
+        margin-bottom: 10px;
+        }
+        
+.main {
+display: block;
+}
+.main__wrap {
+margin-top: 35px;
+text-align: center;
+}
+.main__wrap h1 {
+font-size: 2.8rem;
+width: 100%;
+margin-bottom: 20px;
+}
+.main__wrap h1 span {
+font-size: 2.8rem;
+}
+.main__wrap p {
+font-size: 1.6rem;
+width: 100%;
+margin-bottom: 30px;
+}
+.main__wrap a {
+margin: 0 auto;
+}
+.main > img:nth-child(2) {
+    width: 100%;
+    }
+    .advantages ul {
+        display: block;
+        }
+        .advantages ul li {
+        width: 90%;
+        margin-bottom: 10px;
+        }
+        .advantages ul li p:last-child {
+        width: 90%;
+        }
+        .advantages {
+        padding: 30px 0 50px 0;
+        }
+        .advantages ul li img {
+        width: 100px;
+        }
+        .life h2 {
+            font-size: 2.4rem;
+            margin-bottom: 30px;
+            }
+            .life__wrap {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+            }
+            .life__wrap p {
+            width: 100%;
+            font-size: 1.4rem;
+            }
+            .photo {
+            width: 100%;
+            }
+            .life__wrap h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            }
+            .life__wrap ul li span {
+            font-size: 1.4rem;
+            }
+            .photo {
+            margin-top: 10px;
+            }
+            .life {
+            padding: 0 0 50px 0;
+            }
+            .contacts__wrap h2 {
+                font-size: 2.4rem;
+                margin-bottom: 30px;
+                }
+                .contacts__wrap h2 span {
+                font-size: 2.4rem;
+                }
+                .contacts {
+                display: block;
+                text-align: center;
+                }
+                .contacts__wrap p {
+                font-size: 1.6rem;
+                }
+                .contacts__time {
+                margin-bottom: 20px;
+                justify-content: center;
+                }
+                .contacts__soc {
+                justify-content: center;
+                }
+                .contacts__container {
+                padding: 50px 0;
+                }
+                .contacts > iframe:nth-child(2) {
+                width: 100%;
+                margin-top: 20px;
+                }
+                .request > img:nth-child(1) {
+                    display: none;
+                    }
+                    .request {
+                    display: block;
+                    }
+                    .request__container {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    }
+                    .request__form form h3 {
+                    font-size: 2.4rem;
+                    margin-bottom: 20px;
+                    }
+                    .request__form form h3 span {
+                    font-size: 2.4rem;
+                    }
+                    .request__form form {
+                    padding: 30px 30px;
+                    }
+                    .request__form form input {
+                    font-size: 1.4rem;
+                    width: 100%;
+                    }
+                    .request__form form button {
+                    font-size: 1.4rem;
+                    width: 100%;
+                    }
+                    footer p {
+                    font-size: 1.2rem;
+                    }
+                    .footer__container {
+                    padding: 25px 0;
+                    }
+                    .reverse{
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+}
