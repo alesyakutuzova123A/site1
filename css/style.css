@@ -969,4 +969,7 @@ footer p {
     .logo {
         width: 100px;
     }
+    .life__wrap ul {
+        padding-left: 0;
+        }
 }
