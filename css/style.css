@@ -787,6 +787,7 @@ footer p {
 
     .header__container>div:nth-child(1)>header:nth-child(1)>nav:nth-child(1)>a:nth-child(1)>img:nth-child(1) {
         margin-bottom: 10px;
+        width: 100px;
     }
 
     .main {
@@ -812,12 +813,17 @@ footer p {
         font-size: 1.6rem;
         width: 100%;
         margin-bottom: 20px;
+         padding-left: 55px;
     }
 
     .main__wrap a {
         margin: 0 auto;
     }
-
+    .main__wrap a span {
+        font-size: 1.4rem;
+        padding: 15px 0;
+        }
+      
     .main>img:nth-child(2) {
         width: 100%;
     }
@@ -966,10 +972,11 @@ footer p {
         flex-direction: column-reverse;
     }
 
-    .logo {
-        width: 100px;
-    }
+
     .life__wrap ul {
         padding-left: 0;
+        }
+        nav{
+            padding: 5px 0;
         }
 }
