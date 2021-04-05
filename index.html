@@ -7,6 +7,8 @@
     <title>ABC club</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/scrpt.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -178,20 +180,5 @@
             </footer>
         </div>
     </div>
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script>
-         
-      $(document).ready(function () {
-        $("a[href*='#']").on("click", function (e) {
-          var anchor = $(this);
-          $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-          }, 3000);
-          e.preventDefault();
-          return false;
-        });
-      });
-    
-        </script>
 </body>
 </html>
